@@ -1,0 +1,3 @@
+[submodule "api-tools-skeleton"]
+	path = api-tools-skeleton
+	url = https://github.com/codeedu/api-tools-skeleton
