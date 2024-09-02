@@ -28,3 +28,14 @@ Accept: application/json
 ```
 
 [GraphQl](docs/graphql.md)
+
+```http
+POST http://localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{
+  "query": "query { echo(message: \"Hello World\") }"
+}
+
+```
