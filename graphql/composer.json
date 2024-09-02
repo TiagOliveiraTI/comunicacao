@@ -1,0 +1,28 @@
+{
+    "name": "otaodev/infra",
+    "autoload": {
+        "psr-4": {
+            "Otaodev\\Infra\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tiago Oliveira",
+            "email": "contato@otao.dev.br"
+        }
+    ],
+    "require-dev": {
+        "phpro/grumphp": "^2.5",
+        "phpunit/phpunit": "^11.0",
+        "squizlabs/php_codesniffer": "^3.9",
+        "phpstan/phpstan": "^1.10"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpro/grumphp": true
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.8"
+    }
+}

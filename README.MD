@@ -26,3 +26,5 @@ Accept: application/json
 GET http://localhost:8080/users/1
 Accept: application/json
 ```
+
+[GraphQl](docs/graphql.md)

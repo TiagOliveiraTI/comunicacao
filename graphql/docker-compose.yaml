@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  php:
+    build:
+      context: ./
+      dockerfile: .infra/php/Dockerfile
+      args:
+        user: ${USER}
+        uid: ${UID}
+    image: otaodev/php:latest
+    container_name: php
+    volumes:
+      - .:/var/www
+    networks:
+      - otaonet
+
+  nginx:
+    build: 
+      context: ./
+      dockerfile: .infra/nginx/Dockerfile
+    image: otaodev/nginx:latest
+    container_name: nginx
+    volumes:
+      - ./public:/var/www/public:delegated
+    networks:
+      - otaonet
+    ports:
+      - "8080:80"
+
+networks:
+  otaonet:
+    driver: bridge
